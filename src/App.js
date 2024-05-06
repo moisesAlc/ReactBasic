@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-        ♾️ Módulo de Jenkins do <b>IT TALENT!</b> 🚀
+        ♾️ Módulo de CI/CD do <b>IT TALENT!</b> 🚀
         </p>
       </header>
     </div>
