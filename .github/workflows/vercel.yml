@@ -21,6 +21,8 @@ jobs:
         with:
           node-version: '20'
 
+      - run: echo VERCEL_TOKEN
+
       - name: Install Vercel CLI
         run: npm install --global vercel
 
