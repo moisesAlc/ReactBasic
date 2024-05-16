@@ -32,7 +32,7 @@ jobs:
         uses: actions/configure-pages@v5
         with:
           enablement: true
-          token: $ {{secrets.GH_TOKEN }}
+          token: ${{secrets.GH_TOKEN }}
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
