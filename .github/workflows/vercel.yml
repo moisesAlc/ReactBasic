@@ -6,6 +6,8 @@ env:
 #X
 run-name: deploying on Vercel 🚀
 on:
+  workflow_dispatch:
+  
   push:
     branches:
       - main
