@@ -1,8 +1,8 @@
 name: Vercel Deploy
 env:
-  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-  VERCEL_PROJECT_ID: ${{ secrets.PROJECT_ID }}
-  VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+  VERCEL_ORG_ID: ${{ variables.VERCEL_TEAM_ID }}
+  VERCEL_PROJECT_ID: ${{ variables.PROJECT_ID }}
+  VERCEL_TOKEN: ${{ variables.VERCEL_TOKEN }}
 #X
 run-name: deploying on Vercel 🚀
 on:
@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: '20'
 
-      - run: echo ${{ secrets.PROJECT_ID }}
+      - run: echo "${{ variables.PROJECT_ID }}"
 
       - name: Install Vercel CLI
         run: npm install --global vercel
