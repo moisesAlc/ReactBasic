@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: '20'
 
-      - run: echo "$PROJECT_ID"
+      - run: echo "${{PROJECT_ID}}"
 
       - name: Install Vercel CLI
         run: npm install --global vercel
