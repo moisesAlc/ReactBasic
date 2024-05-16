@@ -3,6 +3,7 @@ env:
   VERCEL_ORG_ID: ${{ vars.VERCEL_TEAM_ID }}
   VERCEL_PROJECT_ID: ${{ vars.PROJECT_ID }}
   VERCEL_TOKEN: ${{ vars.VERCEL_TOKEN }}
+  LOGIN_EMAIL: ${{ vars.LOGIN_EMAIL }}
 
 run-name: deploying on Vercel 🚀
 on:
