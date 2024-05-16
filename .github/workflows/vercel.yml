@@ -1,9 +1,9 @@
 name: Vercel Deploy
 env:
-  VERCEL_ORG_ID: ${{ variables.VERCEL_TEAM_ID }}
-  VERCEL_PROJECT_ID: ${{ variables.PROJECT_ID }}
-  VERCEL_TOKEN: ${{ variables.VERCEL_TOKEN }}
-#X
+  VERCEL_ORG_ID: ${{ vars.VERCEL_TEAM_ID }}
+  VERCEL_PROJECT_ID: ${{ vars.PROJECT_ID }}
+  VERCEL_TOKEN: ${{ vars.VERCEL_TOKEN }}
+
 run-name: deploying on Vercel 🚀
 on:
   workflow_dispatch:
