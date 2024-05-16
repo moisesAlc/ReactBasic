@@ -28,6 +28,9 @@ jobs:
       - name: Install Vercel CLI
         run: npm install --global vercel
 
+      - name: Vercel Login
+        run: vercel login
+
       - name: Pull Vercel Environment Information
         run: vercel pull --yes --environment=production --token=VERCEL_TOKEN
 
