@@ -18,10 +18,12 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Run linter 🔎
+      - name: Run Install 
         run: |
           npm ci
-          npx eslint ./src/App.js
+          
+      - name: Run ESLint 🔎
+        run: npm run lint
     
   build-and-deploy:
     concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
